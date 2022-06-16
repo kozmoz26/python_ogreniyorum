@@ -36,6 +36,7 @@ findik_sayisi=int(input("kaç tane fındık var?"))
 findiklar=[]
 findiklar.append(findik_sayisi)
 rastgele_sayi=random.randint(2,findik_sayisi)
+rastgele_sayi=random.randint(2,findik_sayisi)
 kirilan_findikler=0
 while kirilan_findikler<findik_sayisi:
     time.sleep( 0.25 )
