@@ -5,7 +5,7 @@
 num1=int(input("input number 1 :")) 
 
 #user will input second number
-num2=int(input("input number 3) :"))
+num2=int(input("input number 2 :"))
 
 #user will input third number
 num3=int(input("input number 3 :"))
@@ -25,7 +25,7 @@ x=(input("which result you want to see?( result1 / result2 / result3 ):"))
 #show the result the user wants to see
 if x == "result1":
     print(result1)
-elif x == "result2":   
+elif x == "result2":
     print(result2)
 elif x== "result3":
     print(result3)

@@ -35,20 +35,15 @@ findik_sayisi=int(input("kaç tane fındık var?"))
 # 4)fındıkları kır
 findiklar=[]
 findiklar.append(findik_sayisi)
-rastgele_sayi=random.randint(2,findik_sayisi-1)
+rastgele_sayi=random.randint(1,findik_sayisi-1)
 kirilan_findikler=0
 while kirilan_findikler<findik_sayisi:
-    time.sleep( 0.25 )
+    time.sleep( 0.15 )
     if(kirilan_findikler==rastgele_sayi):
         print("bu fındık kırılamadı. biraz sert çıktı. Dur bir daha deneyeyim")
     print(kirilan_findikler+1,"fındık kırıldı")
     kirilan_findikler=kirilan_findikler+1
     
-# 5)kırdığın fındıkların çöplerini çöpe at
-print("fındık kabukları çöpe atıldı")
-
-# 6)fındık kıracağını yerine koy
-print("fındık kıracağı yerine koyuldu")
 
 
 
