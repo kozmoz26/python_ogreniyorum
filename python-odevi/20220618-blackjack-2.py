@@ -79,3 +79,11 @@ while kart_istiyormu<2:
     print("ikinci oyuncunun puanı",ikinci_oyuncunun_puani)
 
     #ikiside "hayır" cevabını verdiyse oyunu puanları karşılaştır, ekrana yaz ve oyunu bitir
+    if birinci_oyuncunun_puani>ikinci_oyuncunun_puani:
+        print("birinci oyuncu kazandı")
+    elif birinci_oyuncunun_puani==ikinci_oyuncunun_puani:
+        print("berabere kaldınız. Dostluk kazandı")
+    else :
+        print("ikinci oyuncu kazandı")
+    
+

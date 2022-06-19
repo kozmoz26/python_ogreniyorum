@@ -5,9 +5,6 @@ bir tuşa basılınca programdan çıkılabilsin
 """ 
 
 #istediğin zaman çıkmanı ve kodun loopta olmasını sağlayan kod
-from re import T
-
-
 quit=0
 while quit==0:
     islem=input("yapacağınız işlemi seçin (toplama(+),çıkarma(-),bölme(/),çarpma(*) çıkmak için \"quit\" yazın :")
@@ -23,12 +20,18 @@ while quit==0:
             sayilar_listesi.append(sayi)
             i+=1
 
-        #toplama
+
+        #toplama       
         if islem=="+":
-            toplam =0
+            donguya_ilk_kezmi_giriyoruz=True
             for sayi in sayilar_listesi:
-                toplam=toplam+sayi
-            print(toplam) 
+                if donguya_ilk_kezmi_giriyoruz==True:  
+                    toplama=sayi
+                    donguya_ilk_kezmi_giriyoruz=False 
+                else:
+                    toplama=toplama+sayi
+            print(toplama) 
+
 
         #çıkartma        
         if islem=="-":

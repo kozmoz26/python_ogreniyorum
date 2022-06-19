@@ -33,7 +33,7 @@ while x==0:
     if kart_cekme_oyuncu2=="evet":
             oyuncu2_cekilen_kart=int(random.uniform(2,11))
             oyuncu2_kart_sayisi=oyuncu2_cekilen_kart+oyuncu2_kart_sayisi
-            print(oyuncu2_cekilen_kart,"çektiniz yeni kart sayınız",oyuncu2_kart_sayisi,"\nsıra 1. oyuncuda\n" )
+            print(oyuncu2_cekilen_kart,"çektiniz yeni kart sayınız",oyuncu2_kart_sayisi,"\n" )
     if oyuncu2_kart_sayisi==21:
         print("OYUNCU 2 KAZANDI!")
         x=1
