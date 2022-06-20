@@ -2,7 +2,14 @@
 from fonksiyonlar import kart_ver
 from fonksiyonlar import puan_soyle
 from fonksiyonlar import kart_cek
-from fonksiyonlar import oyun_bitir
+
+
+def oyun_bitir(birinci_oyuncu_kart_cekmek_istiyormu:any, ikinci_oyuncu_kart_cekmek_istiyormu:any ):
+    if birinci_oyuncu_kart_cekmek_istiyormu=="H" and ikinci_oyuncu_kart_cekmek_istiyormu=="H":
+        kart_istiyormu=2
+    return kart_istiyormu
+
+
 
 #1. oyuncuya 2 kart ver
 birinci_kart=kart_ver()
@@ -72,7 +79,6 @@ while kart_istiyormu < 2:
         else:
             print("ikinci oyuncu kazandı")
         
-
 
 
 
