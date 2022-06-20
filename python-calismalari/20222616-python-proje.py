@@ -1,10 +1,4 @@
 
-
-
-
-from ast import While
-
-
 kullanici_adı=input("kullanıcı adınızı giriniz")
 if kullanici_adı=="batuhan":
     print("kullanıcı adı doğru. Şifreyi giriniz")
