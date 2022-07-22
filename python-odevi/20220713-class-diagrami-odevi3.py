@@ -39,23 +39,23 @@ class Product:
 
     def Add(self):
         pass
-    def Modify(id):
+    def Modify(id:int):
         pass
-    def select(id):
+    def select(id:int):
         pass
 
 
 class Stock:
-    def __init__(self,procudtID:int,quality:str,no:int):
-        self.productID=procudtID
+    def __init__(self,productID:int,quality:str,no:int):
+        self.productID=productID
         self.quality=quality
         self.no=no
 
     def Add(self):
         pass
-    def Modify(id):
+    def Modify(productID:int):
         pass
-    def select(id):
+    def select(productID:int):
         pass
 
         
