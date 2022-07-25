@@ -6,8 +6,8 @@ class Bank:
         self.location=location
 
 class Teller:
-    def __init__(self,ıd:int,name:str):
-        self.ıd=ıd
+    def __init__(self,id:int,name:str):
+        self.id=id
         self.name=name
 
     def CollectMoney(self):
@@ -24,8 +24,8 @@ class Teller:
         pass
 
 class Customer:
-    def __init__(self,ıd:int,name:str,address:str,phoneNo:int,acctNo:int):
-        self.ıd=ıd
+    def __init__(self,id:int,name:str,address:str,phoneNo:int,acctNo:int):
+        self.id=id
         self.name=name
         self.address=address
         self.phoneNo=phoneNo
@@ -47,25 +47,25 @@ class Customer:
         pass
 
 class Loan:
-    def __init__(self,ıd:int,type:str,accountıd:int,customerıd:int):
-        self.ıd=ıd
+    def __init__(self,id:int,type:str,accountid:int,customerid:int):
+        self.id=id
         self.type=type
-        self.accountıd=accountıd
-        self.customerıd=customerıd      
+        self.accountid=accountid
+        self.customerid=customerid      
 
         
 class Account:
-    def __init__(self,ıd:int,customerıd:int):
-        self.ıd=ıd
-        self.customerıd=customerıd
+    def __init__(self,id:int,customerid:int):
+        self.id=id
+        self.customerid=customerid
 
 class Checking(Account):
-    def __init__(self, ıd: int, customerıd: int):
-        super().__init__(ıd, customerıd)
+    def __init__(self, id: int, customerid: int):
+        super().__init__(id, customerid)
 
 class Savings(Account):
-    def __init__(self, ıd: int, customerıd: int):
-        super().__init__(ıd, customerıd)
+    def __init__(self, id: int, customerid: int):
+        super().__init__(id, customerid)
 
 
 

@@ -1,5 +1,4 @@
 
-import random
 
 class Informations:
     def __init__(self,name:str,address:str,id:int):
@@ -21,6 +20,8 @@ class Informations:
 class Employee(Informations):
     def __init__(self, name: str, address: str, id: int,phoneNo:int, isManager:bool):
         super().__init__(name, address, id)
+        self.phoneNo=phoneNo
+        self.isManager=isManager
 
     def beManager(employe):
        employe.isManager = True
@@ -46,7 +47,7 @@ class Department(Informations):
     def GetManager(self):
         if Employee.BeManager==True:
             return True
-        else
+        else:
             return False
 
 
